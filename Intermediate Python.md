@@ -53,7 +53,7 @@ plt.title(title)
 # After customizing, display the plot
 plt.show()
 ```
-![](https://raw.githubusercontent.com/rzldasb/learning_python/d5eeec0546e140024c58b0ec5d36817e2481f62a/DC_MD_1.3.svg)
+![](https://raw.githubusercontent.com/rzldasb/learning_python/e765fd0cfb44e33d27c3c5b16147d3567035d7fa/DC_MD_1.3.svg)
 
 ### Ticks刻度
 ``plt.yticks([0,1,2], ["one","two","three"])``
@@ -80,7 +80,7 @@ plt.xticks(tick_val,tick_lab)
 # After customizing, display the plot
 plt.show()
 ```
-![](https://raw.githubusercontent.com/rzldasb/learning_python/d5eeec0546e140024c58b0ec5d36817e2481f62a/DC_MD_1.4.svg)
+![](https://raw.githubusercontent.com/rzldasb/learning_python/e765fd0cfb44e33d27c3c5b16147d3567035d7fa/DC_MD_1.4.svg)
 
 
 ### size尺寸
@@ -112,6 +112,36 @@ plt.show()
 ```
 
 ### color颜色
+
+用字典格式设置颜色。  
+```py
+col = {
+    'Asia':'red',
+    'Europe':'green',
+    'Africa':'blue',
+    'Americas':'yellow',
+    'Oceania':'black'
+}
+```
+
+```py
+# Specify c and alpha inside plt.scatter()
+plt.scatter(x = gdp_cap, y = life_exp, s = np.array(pop) * 2, c = col,alpha=0.8)
+
+# Previous customizations
+plt.xscale('log') 
+plt.xlabel('GDP per Capita [in USD]')
+plt.ylabel('Life Expectancy [in years]')
+plt.title('World Development in 2007')
+plt.xticks([1000,10000,100000], ['1k','10k','100k'])
+
+# Show the plot
+plt.show()
+```
+![](https://raw.githubusercontent.com/rzldasb/learning_python/e765fd0cfb44e33d27c3c5b16147d3567035d7fa/DC_MD_1.5.svg)  
+
+
+
 
 
 
