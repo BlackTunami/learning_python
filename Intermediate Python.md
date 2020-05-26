@@ -383,6 +383,14 @@ EG           Egypt          True
 ```
 
 
+数据框和series的区别没有搞懂    
+```py
+cars.loc[:, 'country']
+cars.iloc[:, 1]
+
+cars.loc[:, ['country','drives_right']]
+cars.iloc[:, [1, 2]]
+```
 
 
 
