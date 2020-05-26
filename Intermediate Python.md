@@ -172,10 +172,12 @@ plt.show()
 europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
 
 # Print out the keys in europe
-print(europe.keys())
+print(europe.keys())  
+Output: dict_keys(['france', 'germany', 'norway', 'spain'])  
 
 # Print out value that belongs to key 'norway'
 print(europe["norway"])
+Output: oslo  
 ```
 .keys()提取key值  
 
