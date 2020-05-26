@@ -141,10 +141,43 @@ plt.show()
 ![](https://raw.githubusercontent.com/rzldasb/learning_python/e765fd0cfb44e33d27c3c5b16147d3567035d7fa/DC_MD_1.5.svg)  
 
 
+### text添加文本
+```py
+# Scatter plot
+plt.scatter(x = gdp_cap, y = life_exp, s = np.array(pop) * 2, c = col, alpha = 0.8)
+
+# Previous customizations
+plt.xscale('log') 
+plt.xlabel('GDP per Capita [in USD]')
+plt.ylabel('Life Expectancy [in years]')
+plt.title('World Development in 2007')
+plt.xticks([1000,10000,100000], ['1k','10k','100k'])
+
+# Additional customizations
+plt.text(1550, 71, 'India')
+plt.text(5700, 80, 'China')
+
+# Add grid() call
+plt.grid(True) 
+
+# Show the plot
+plt.show()
+```
 
 
+## 2. Dictionaries & Pandas 
 
+```py
+# Definition of dictionary
+europe = {'spain':'madrid', 'france':'paris', 'germany':'berlin', 'norway':'oslo' }
 
+# Print out the keys in europe
+print(europe.keys())
+
+# Print out value that belongs to key 'norway'
+print(europe["norway"])
+```
+.keys()提取key值  
 
 
 
